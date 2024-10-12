@@ -1,0 +1,31 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/produtos
+
+### 
+
+POST http://localhost:3000/produtos
+Content-type: application/json
+
+{
+    "nome": "a vida invisivel de addie larue" ,
+    "descricao": "outro livro necessario",
+    "preco": "7"
+   
+}
+
+###
+PUT http://localhost:3000/produtos/2
+Content-Type: application/json
+
+{
+   "nome": "Pequeno Principe",
+    "descricao": "um livro necessario",
+    "preco": 3
+}
+
+###
+
+DELETE http://localhost:8080/produtos/1
